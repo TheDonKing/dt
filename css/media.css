@@ -2,22 +2,47 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+    .services div p{
+        line-height: 1.4em;
+    }
 
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+    .services div p{
+        display: table-cell;
+        vertical-align: middle;
+    }
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    header .number p{
+        font-size: 2.6em;
+        text-align: center;
+    }
+    .services div p{
+        display: table-cell;
+        vertical-align: middle;
+    }
 
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+    header .logo p{
+        font-size:1.6em ;
+    }
+    header .number p{
+        font-size: 3em;
+        text-align: center;
+    }
+    .services div p{
+        display: block;
 
+    }
 }
 
 /* Custom, iPhone Retina */

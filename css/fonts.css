@@ -1,3 +1,43 @@
+/* font-family: "amazing_groteskdemibold"; */
+@font-face {
+    font-family: 'amazing_groteskdemibold';
+    src: url('../fonts/amazing_grotesk_demi/amazing_grotesk_demi.eot');
+    src: url('../fonts/amazing_grotesk_demi/amazing_grotesk_demi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/amazing_grotesk_demi/amazing_grotesk_demi.woff2') format('woff2'),
+    url('../fonts/amazing_grotesk_demi/amazing_grotesk_demi.woff') format('woff'),
+    url('../fonts/amazing_grotesk_demi/amazing_grotesk_demi.ttf') format('truetype'),
+    url('../fonts/amazing_grotesk_demi/amazing_grotesk_demi.svg#amazing_groteskdemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* font-family: "amazing_groteskregular"; */
+@font-face {
+    font-family: 'amazing_groteskregular';
+    src: url('../fonts/amazing_grotesk_book/amazing_grotesk_book.eot');
+    src: url('../fonts/amazing_grotesk_book/amazing_grotesk_book.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/amazing_grotesk_book/amazing_grotesk_book.woff2') format('woff2'),
+    url('../fonts/amazing_grotesk_book/amazing_grotesk_book.woff') format('woff'),
+    url('../fonts/amazing_grotesk_book/amazing_grotesk_book.ttf') format('truetype'),
+    url('../fonts/amazing_grotesk_book/amazing_grotesk_book.svg#amazing_groteskregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* font-family: "amazing_grotesklight"; */
+@font-face {
+    font-family: 'amazing_grotesklight';
+    src: url('../fonts/amazing_grotesk_light/amazing_grotesk_light.eot');
+    src: url('../fonts/amazing_grotesk_light/amazing_grotesk_light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/amazing_grotesk_light/amazing_grotesk_light.woff2') format('woff2'),
+    url('../fonts/amazing_grotesk_light/amazing_grotesk_light.woff') format('woff'),
+    url('../fonts/amazing_grotesk_light/amazing_grotesk_light.ttf') format('truetype'),
+    url('../fonts/amazing_grotesk_light/amazing_grotesk_light.svg#amazing_grotesklight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* font-family: "RobotoRegular"; */
 @font-face {
 	font-family: "RobotoRegular";
@@ -28,6 +68,7 @@
 	font-style: normal;
 	font-weight: normal;
 }
+
 /* font-family: "RobotoBold"; */
 @font-face {
 	font-family: "RobotoBold";
@@ -37,4 +78,16 @@
 	url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
+}
+
+/* font-family: "FontAwesome"; */
+@font-face{
+    font-family:'FontAwesome';
+    src:url('../fonts/font-awesome/fontawesome-webfont.eot?v=4.2.0');
+    src:url('../fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'),
+    url('../fonts/font-awesome/fontawesome-webfont.woff?v=4.2.0') format('woff'),
+    url('../fonts/font-awesome/fontawesome-webfont.ttf?v=4.2.0') format('truetype'),
+    url('../fonts/font-awesome/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+    font-weight:normal;
+    font-style:normal;
 }
