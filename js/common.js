@@ -21,7 +21,7 @@ $(document).ready(function() {
         $('#append').click(function(){
             var boxes = makeBoxes();
             $('#container').append(boxes).nested('append',boxes);
-        })
+        });
 
 
 
@@ -92,11 +92,7 @@ $(document).ready(function() {
 		}, 800);
 		return false;
 	});
-    //Коллаж
-    $('.Collage').collagePlus({
-        'allowPartialLastRow': true,
-        'targetHeight'    : 400
-    });
+
 
     ////Горизонтальный скролл
     //(function($) {
