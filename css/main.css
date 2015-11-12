@@ -168,9 +168,41 @@ footer {
   width: 100%;
   position: relative;
   /* Common button styles */
-  /* Quidel */
 }
-footer .button {
+.social {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: table ;
+}
+.social .social-centered {
+  display: table-row;
+  vertical-align: middle;
+}
+.social .social-centered div {
+  display: table;
+  text-align: center;
+  margin: 0 auto;
+}
+.social .social-centered div a {
+  height: 100%;
+}
+.social .social-centered div a:nth-child(n+2) {
+  margin-left: 33.333333px;
+}
+.social i {
+  height: auto;
+  font-size: 27px;
+  color: #727272;
+}
+.social i:hover {
+  color: #7986cb;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.button {
   min-width: 150px;
   max-width: 250px;
   display: block;
@@ -186,13 +218,14 @@ footer .button {
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.3em;
 }
-footer .button:focus {
+.button:focus {
   outline: none;
 }
-footer .button > span {
+.button > span {
   vertical-align: middle;
 }
-footer .button--quidel {
+/* Quidel */
+.button--quidel {
   background: #4f4f4f;
   color: #4f4f4f;
   overflow: hidden;
@@ -201,28 +234,28 @@ footer .button--quidel {
   -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
   transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 }
-footer .button--quidel.button--inverted {
+.button--quidel.button--inverted {
   background: #fff;
   color: #fff;
 }
-footer .button--quidel::before,
-footer .button--quidel::after {
+.button--quidel::before,
+.button--quidel::after {
   content: '';
   position: absolute;
   z-index: -1;
   border-radius: inherit;
 }
-footer .button--quidel::after {
+.button--quidel::after {
   top: 2px;
   left: 2px;
   right: 2px;
   bottom: 2px;
   background: #e6e6e7;
 }
-footer .button--quidel.button--inverted::after {
+.button--quidel.button--inverted::after {
   background: #37474f;
 }
-footer .button--quidel::before {
+.button--quidel::before {
   background: #7986cb;
   top: 0;
   left: 0;
@@ -235,54 +268,21 @@ footer .button--quidel::before {
   -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
   transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 }
-footer .button--quidel.button--inverted::before {
+.button--quidel.button--inverted::before {
   background: #7986cb;
 }
-footer .button--quidel > span {
+.button--quidel > span {
   padding-left: 0.35em;
 }
-footer .button--quidel:hover {
+.button--quidel:hover {
   color: #7986cb;
 }
-footer .button--quidel.button--inverted:hover {
+.button--quidel.button--inverted:hover {
   color: #7986cb;
 }
-footer .button--quidel:hover::before {
+.button--quidel:hover::before {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-}
-footer .social {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  display: table ;
-}
-footer .social .social-centered {
-  display: table-row;
-  vertical-align: middle;
-}
-footer .social .social-centered div {
-  display: table;
-  text-align: center;
-  margin: 0 auto;
-}
-footer .social .social-centered div a {
-  height: 100%;
-}
-footer .social .social-centered div a:nth-child(n+2) {
-  margin-left: 33.333333px;
-}
-footer .social i {
-  height: auto;
-  font-size: 27px;
-  color: #727272;
-}
-footer .social i:hover {
-  color: #7986cb;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 /*--------------------------------Форма заполнения*/
 #form input button {
@@ -371,4 +371,532 @@ input[placeholder] {
   margin-top: 11px;
   position: absolute;
   width: 15px;
+}
+/* ==========================================================================
+   Architecture
+  ========================================================================== */
+#sidebar {
+  float: left;
+  position: fixed;
+  height: 100%;
+  z-index: 9999;
+  background-color: #bf4c53;
+  color: #aaa;
+  color: #ffffff;
+  width: 34em;
+  left: 0;
+}
+#sidebar .logo {
+  padding-top: 85px;
+}
+#sidebar .logo a {
+  overflow: hidden;
+  width: 100%;
+  outline: none;
+}
+#sidebar .logo a img {
+  vertical-align: top;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+#sidebar nav ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+#sidebar nav ul li {
+  display: inline-block;
+  margin-left: 16.333333%;
+}
+#sidebar nav ul li .sprite {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABCCAYAAADuSnCvAAADvElEQVR4nO2bT0gUURzHd9f1X4pgqUl4kDylEUVhghQagdipokOHIrolXewmFAqCB0GCggg8dDDqoEiXIgIJoYPRJTosUnQIESE6hEQsEfLp8H7Ljs+Z2Znd0d03vS88dub9+b3ffpyZt/N7PxMJq52ivOpx+NFTTkcsEE1uQPqB/XtUMjKnG5DMHvrR7wekbRfvzG0CVnyArOyhH20WyHY/wgMBaoB9RZR6IOVhMzCQIuf2K9WhgQANwBTwm9L1DjhVDBAgHcH8uiZCAQE6gCzwAxgBeoEjRZRjwAXgldifKgHImPhVavkcCgiQBL6Iw2lp7wKGgOGQpQ+oERuXZI6jRQIZSkQgmTcUkE45PixtC5SmLNAqtjLArGlA+uS4DvVQnAZOop4pX4HnQLVPOS3jB8g/hwZlnofAe9OAdMlxh4ux2ZyzQL181jocTzqANriM/wg8MQ1IClhHrQz1jj7NqMs/B+SvAJgHmoCr8oVyQG5pjlyT+uNGAZHzdmAT2ALeAK8dfVYcY5LAogcQyN9i3+V8XHPMDCBSVwtcB56ibpUrwFwIIGdQz48FYBLocnHMHCAexiZCAEkHcMwC0RwLA+QbsBxByZoOJIVa+guVDzJ2LkDf88YCKWAjST6ucU/GnpDzxoA2YgWkCW8tBrQRKyApvF/iDgS0YSYQoArY8Lkigmg0TkBGUT8ULxP+rXsYuC+2W4wHArRI/U0/mwXmy4U1lrR6I4EsSf00cKeE8lbsDEQF5AbwSI6XBcgk6jX/HCqW0i1tVVEAcdiLsrxEYr0lAYlSYa6QXfbDAtH88AVid+40IOVQRe/tlkOVB8TKyl/2UtVkgWiiUpa7ShGV8oOoUmSBaCoFCCpw01vEuPgBIf/6D9AXcmwsgcw4FostoDPE2HgBQQVcdP0CmgOOjw8QVHTMSxsE2BOJDRDyIcJnuO+KZYBVHJl+HnbMB4JKptkC7vr0qQPWUHFQ15RM6Wc2EFTOyB9gJoC9ZuAnap816dHHXCBAIypFc9HtC7pdCYUAGgsElUi3Ku3tWlsKGBdY3S5jx2XciEubsUBGUMvppvR5IH/9VuATKtP5hbSNodLAz5KPma7LZ51m11ggt1ER8hQwiMoEzmkJyTYUCFlH22PgEHAwlkC0ujuoRLqkVp9bklscdW3/A5AhYM3HTtpRZ4FYIDvtWCCaHQtEs2OBaHYsEM1OrIFcRJJkHHW9wLxL3060ZBnUi94y8p9VjnozgezinBaINqcRQOzOXSJh93Z3yAKx8tQ/QxNwack6VosAAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+  display: block;
+}
+#sidebar nav ul li .sprite:hover {
+  opacity: 0.40;
+}
+#sidebar nav ul li .sprite-sprite1 {
+  width: 32px;
+  height: 31px;
+  background-position: -1px -1px;
+}
+#sidebar nav ul li .sprite-sprite2 {
+  width: 32px;
+  height: 31px;
+  background-position: -35px -1px;
+}
+#sidebar nav ul li .sprite-sprite3 {
+  width: 32px;
+  height: 31px;
+  background-position: -1px -34px;
+}
+#sidebar .box-link {
+  margin-top: 88px;
+}
+#sidebar .box-link ul {
+  width: 100%;
+  padding: 0;
+}
+#sidebar .box-link li {
+  list-style: none;
+  height: 53px;
+  width: 100%;
+  display: table;
+}
+#sidebar .box-link li a {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.200em;
+  color: #ffffff;
+  padding-left: 45px;
+}
+#sidebar .box-link li a:hover {
+  border: none;
+  text-decoration: none;
+  color: #f0ad4e;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+#sidebar .box-link li.active {
+  background-color: #952d33;
+  position: relative;
+  color: #fff;
+}
+#sidebar .box-link li.active::after {
+  content: '';
+  position: absolute;
+  /* Абсолютное позиционирование */
+  right: -30px;
+  border: solid transparent;
+  /* Прозрачные границы */
+  border-left: 20px solid #952d33;
+  /* Добавляем треугольник */
+  border-width: 27px 10px 27px 20px;
+}
+#sidebar .box-contacts {
+  width: 100%;
+}
+#sidebar .box-contacts .line {
+  border-top: 1px dashed #fff;
+  /* Параметры линии */
+  height: 1px;
+  /* Высота блока */
+  color: #fff;
+  width: 75%;
+  margin: 0 auto;
+}
+#sidebar .box-contacts .number {
+  width: 100%;
+  margin-top: 100px;
+  font-size: 1.800em;
+}
+#sidebar .box-contacts .number p {
+  text-align: center;
+}
+#sidebar .box-contacts .button-two {
+  width: 100%;
+  margin-top: 54px;
+}
+#sidebar .box-contacts .button-two .button--quidel::after {
+  background: #bf4c53;
+}
+#sidebar .box-contacts .button-two .button--quidel {
+  background: #fff;
+  color: #fff;
+  font-size: 1.1em;
+}
+#sidebar .box-contacts .button-two .button--quidel:hover {
+  color: #f0ad4e;
+}
+#sidebar .box-contacts .button-two .button--quidel::before {
+  background: #f0ad4e;
+}
+#sidebar .box-contacts .social {
+  margin-top: 36px;
+  font-size: 1.600em;
+}
+#sidebar .box-contacts .social a i {
+  color: #fff;
+}
+/* Sidebar */
+#titleBar {
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-transition: -moz-transform 0.5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -ms-transition: -ms-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  display: none;
+  height: 44px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10001;
+  background-color: #364050;
+}
+#titleBar .title {
+  display: block;
+  color: #fff;
+  line-height: 44px;
+  font-size: 1.25em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+#titleBar .title a {
+  color: inherit;
+  text-decoration: none;
+}
+#titleBar .toggle {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#titleBar .toggle:before {
+  font-family: FontAwesome;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f0c9';
+  display: block;
+  position: absolute;
+  top: 7px;
+  font-size: 14px;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0 0.025em 0.15em 0em rgba(0, 0, 0, 0.25);
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);
+  left: 7px;
+}
+#titleBar .toggle:active:before {
+  background-color: #d95673;
+}
+#sidebar section,
+#sidebar nav {
+  position: relative;
+  margin: 2em 0 0 0;
+  font-size: 1.5em;
+}
+#sidebar a {
+  color: #d4dde0;
+}
+.collage-container {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin-left: 330px;
+  height: 100%;
+  /* from transitions.css */
+  /*
+
+  A library of transitions for revealing the loaded images
+  (Heavily) Inspired by http://tympanus.net/codrops/2013/07/02/loading-effects-for-grid-items-with-css-animations/
+
+  */
+  /* EFFECT 1 */
+  /* EFFECT 2 */
+  /* EFFECT 3 */
+  /* EFFECT 4 */
+  /* EFFECT 5 */
+  /* EFFECT 6 */
+  /* Universal durations */
+}
+.collage-container .content {
+  background: none repeat scroll 0 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  padding: 20px;
+  position: relative;
+}
+.collage-container .horizontal-images.content li {
+  float: left;
+  margin: 0 3px;
+}
+.collage-container .box {
+  background-color: #ff4499;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 300ms cubic-bezier(1, 0, 0, 1);
+  -moz-transition: all 300ms cubic-bezier(1, 0, 0, 1);
+  -ms-transition: all 300ms cubic-bezier(1, 0, 0, 1);
+  -o-transition: all 300ms cubic-bezier(1, 0, 0, 1);
+  transition: all 300ms cubic-bezier(1, 0, 0, 1);
+  /* easeInOutExpo */
+  -webkit-transition-property: left, right, top;
+  -moz-transition-property: left, right, top;
+  -ms-transition-property: left, right, top;
+  -o-transition-property: left, right, top;
+  transition-property: left, right, top;
+}
+.collage-container #container {
+  background: red;
+}
+.collage-container .size21,
+.collage-container .size22,
+.collage-container .size23,
+.collage-container .twocols {
+  background: #cccccc;
+}
+.collage-container .size31,
+.collage-container .size32,
+.collage-container .size33,
+.collage-container .threecols {
+  background: #ff9999;
+}
+.collage-container a.btn {
+  margin-right: 1px;
+  line-height: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: inline-block;
+  width: 75px;
+  color: red;
+}
+.collage-container .scroll {
+  left: 500px;
+  position: fixed;
+  top: 0;
+  width: 2500px;
+}
+.collage-container .Collage img {
+  opacity: 0;
+  border-radius: 2px;
+  /*
+    * Change this to try different borders
+    */
+  border: 0px solid #FFF;
+}
+.collage-container .Collage {
+  /*
+     * Change this to set the spacing of the images in the grid
+     */
+}
+.collage-container .footnote {
+  font-family: arial;
+  color: #999;
+  padding: 5px;
+  font-size: 12px;
+}
+.collage-container .footnote a {
+  color: #09f;
+  text-decoration: none;
+}
+.collage-container .effect-parent {
+  -webkit-perspective: 1300px;
+  -moz-perspective: 1300px;
+  perspective: 1300px;
+}
+.collage-container .effect-1 {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50% -300px;
+  -moz-transform-origin: 50% 50% -300px;
+  transform-origin: 50% 50% -300px;
+  -webkit-transform: rotateX(-180deg);
+  -moz-transform: rotateX(-180deg);
+  transform: rotateX(-180deg);
+  -webkit-animation: fly ease-in-out forwards;
+  -moz-animation: fly ease-in-out forwards;
+  animation: fly ease-in-out forwards;
+}
+@-webkit-keyframes fly {
+  100% {
+    -webkit-transform: rotateX(0deg);
+    opacity: 1;
+    -webkit-transform-origin: 50% 50% 0;
+  }
+}
+@-moz-keyframes fly {
+  100% {
+    -moz-transform: rotateX(0deg);
+    opacity: 1;
+    -moz-transform-origin: 50% 50% 0;
+  }
+}
+@keyframes fly {
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+    transform-origin: 50% 50% 0;
+  }
+}
+.collage-container .effect-2 {
+  -webkit-transform: translateY(200px);
+  -moz-transform: translateY(200px);
+  transform: translateY(200px);
+  -webkit-animation: moveUp ease forwards;
+  -moz-animation: moveUp ease forwards;
+  animation: moveUp ease forwards;
+}
+@-webkit-keyframes moveUp {
+  to {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes moveUp {
+  to {
+    -moz-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes moveUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.collage-container .effect-3 {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+  -moz-transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+  transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+  -webkit-animation: fallPerspective ease-in-out forwards;
+  -moz-animation: fallPerspective ease-in-out forwards;
+  animation: fallPerspective ease-in-out forwards;
+}
+@-webkit-keyframes fallPerspective {
+  100% {
+    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes fallPerspective {
+  100% {
+    -moz-transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes fallPerspective {
+  100% {
+    transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+.collage-container .effect-4 {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -webkit-transform: rotateX(-80deg);
+  -moz-transform: rotateX(-80deg);
+  transform: rotateX(-80deg);
+  -webkit-animation: flip ease-in-out forwards;
+  -moz-animation: flip ease-in-out forwards;
+  animation: flip ease-in-out forwards;
+}
+@-webkit-keyframes flip {
+  100% {
+    -webkit-transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes flip {
+  100% {
+    -moz-transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes flip {
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+.collage-container .effect-5 {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-animation: moveUp ease-in-out forwards;
+  -moz-animation: moveUp ease-in-out forwards;
+  animation: moveUp ease-in-out forwards;
+}
+.collage-container .effect-6 {
+  -webkit-transform: scale(0.638) translate(-179px);
+  -moz-transform: scale(0.638) translate(-179px);
+  transform: scale(0.638) translate(-179px);
+  -webkit-animation: moveUp ease-in-out forwards;
+  -moz-animation: moveUp ease-in-out forwards;
+  animation: moveUp ease-in-out forwards;
+}
+.collage-container .effect-duration-1 {
+  -webkit-animation-duration: .4s;
+  -moz-animation-duration: .4s;
+  animation-duration: .4s;
+}
+.collage-container .effect-duration-2 {
+  -webkit-animation-duration: .5s;
+  -moz-animation-duration: .5s;
+  animation-duration: .5s;
+}
+.collage-container .effect-duration-3 {
+  -webkit-animation-duration: .6s;
+  -moz-animation-duration: .6s;
+  animation-duration: .6s;
+}
+.collage-container .effect-duration-4 {
+  -webkit-animation-duration: .7s;
+  -moz-animation-duration: .7s;
+  animation-duration: .7s;
+}
+.collage-container .effect-duration-5 {
+  -webkit-animation-duration: .8s;
+  -moz-animation-duration: .8s;
+  animation-duration: .8s;
+}
+.collage-container .effect-duration-6 {
+  -webkit-animation-duration: .9s;
+  -moz-animation-duration: .9s;
+  animation-duration: .9s;
+}
+.collage-container .effect-duration-7 {
+  -webkit-animation-duration: .95s;
+  -moz-animation-duration: .95s;
+  animation-duration: .95s;
+}
+.collage-container .effect-duration-8 {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.collage-container .effect-duration-9 {
+  -webkit-animation-duration: 1.05s;
+  -moz-animation-duration: 1.05s;
+  animation-duration: 1.05s;
+}
+.collage-container .effect-duration-10 {
+  -webkit-animation-duration: 1.1s;
+  -moz-animation-duration: 1.1s;
+  animation-duration: 1.1s;
 }

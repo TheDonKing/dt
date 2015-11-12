@@ -1,26 +1,26 @@
-/*---------------------------------------------------
-    LESS Elements 0.9
-  ---------------------------------------------------
-    A set of useful LESS mixins
-    More info at: http://lesselements.com
-  ---------------------------------------------------*/
+@import url(elements.less);
 /*==========  Desktop First Method  ==========*/
+
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-  .services div p {
+@media only screen and (max-width : 1200px) {
+  .services div p{
     line-height: 1.4em;
   }
+
 }
+
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-  .services div p {
+@media only screen and (max-width : 992px) {
+  .services div p{
     display: table-cell;
     vertical-align: middle;
   }
   /* Sidebar */
+
   #titleBar {
     display: block;
   }
+
   #sidebar {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -36,34 +36,32 @@
     position: fixed;
     top: 0;
     z-index: 10002;
-    -webkit-transform: translateX(-34em);
-    -moz-transform: translateX(-34em);
-    -o-transform: translateX(-34em);
-    -ms-transform: translateX(-34em);
-    transform: translateX(-34em);
+    .transform(translateX(-34em) );
   }
-  body.sidebar-visible #content,
-  body.sidebar-visible #titleBar {
-    -webkit-transform: translateX(34em);
-    -moz-transform: translateX(34em);
-    -o-transform: translateX(34em);
-    -ms-transform: translateX(34em);
-    transform: translateX(34em);
+
+
+
+
+  body.sidebar-visible #content, body.sidebar-visible #titleBar {
+.transform(translateX(34em) );
   }
+
   body.sidebar-visible #sidebar {
     -moz-transform: translateX(0);
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
+
 }
+
 /* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-  header .number p {
+@media only screen and (max-width : 768px) {
+  header .number p{
     font-size: 2.6em;
     text-align: center;
   }
-  .services div p {
+  .services div p{
     display: table-cell;
     vertical-align: middle;
   }
@@ -71,28 +69,57 @@
     position: absolute;
     top: 0;
   }
+
 }
+
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  header .logo p {
-    font-size: 1.6em ;
+@media only screen and (max-width : 480px) {
+  header .logo p{
+    font-size:1.6em ;
   }
-  header .number p {
+  header .number p{
     font-size: 3em;
     text-align: center;
   }
-  .services div p {
+  .services div p{
     display: block;
+
   }
   .sidebar {
     padding: 20px 12px 20px 10px;
     box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, 0.15), inset -0.1em 0 0.5em 0 rgba(0, 0, 0, 0.25);
   }
 }
+
 /* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
 /*==========  Mobile First Method  ==========*/
+
 /* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
 /* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
 /* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
 /* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
 /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
