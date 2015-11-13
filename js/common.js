@@ -9,10 +9,15 @@ $(document).ready(function() {
         autoHideScrollbar: true
 
     });
+    //Горизогтальный скролл во всю высоту
     $(".content").css("height", $(window).height());
+    $(".container").css("width", $(window).width());
+
 
     //Сетка
-    $('#container').nested();
+    $('#container').nested({
+        minWidth: 250
+    });
 
         $('#prepend').click(function(){
             var boxes = makeBoxes();
@@ -93,26 +98,7 @@ $(document).ready(function() {
 		return false;
 	});
 
-
-    ////Горизонтальный скролл
-    //(function($) {
-    //    $.jInvertScroll(['.scroll'],        // массив с селекторами
-    //        {   height: 2500,                   // высота прокрутки
-    //            onScroll: function(percent) {   // колбэк
-    //                console.log(percent);
-    //            }
-    //        });
-    //}(jQuery));
-    //
-    //$.jInvertScroll(['.scroll'], {
-    //    width: 'auto',	// ширина страницы (auto по умолчанию)
-    //    height: 'auto',	// высота страны (auto по умолчанию)
-    //    onScroll: function(percent) {
-    //        // колбэк
-    //    }
-    //});
-
-
+//Сайд бар во всю высоту
     function heightDetect(){
         $("#sidebar").css("height", $(window).height());
     }
@@ -205,8 +191,3 @@ $(document).ready(function() {
 
 })(jQuery);
 
-(function($){
-    $(window).load(function(){
-        $(".content").mCustomScrollbar();
-    });
-})(jQuery);

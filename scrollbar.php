@@ -17,7 +17,6 @@
             overflow: auto;
             padding: 20px;
             position: relative;
-            width: 740px;
         }
         .horizontal-images.content li {
             float: left;
@@ -27,7 +26,7 @@
 </head>
 <body>
 
-<div id="content-5" class="content horizontal-images light">
+<div id="content-collage" class="content horizontal-images light">
     <ul>
         <li><h2>Horizontal <br />auto-expanded <br />scrollbar</h2></li>
         <li><h2>theme: <br />"dark-thin"</h2></li>
@@ -47,6 +46,6 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="libs/invertscroll/jquery.mCustomScrollbar.concat.min.js"></script>
-
+<script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>

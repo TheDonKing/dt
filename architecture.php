@@ -105,7 +105,7 @@
         </div>
         <div class="collage-container">
             <div id="content-collage" class="content horizontal-images light">
-                <div id="container">
+                <div id="container" style="height: 100%">
                     <div class="box size11">1</div>
                     <div class="box size21">2</div>
                     <div class="box size32">3</div>
@@ -116,24 +116,17 @@
                     <div class="box size11">8</div>
                     <div class="box size31">9</div>
                     <div class="box size22">10</div>
-                    <div class="box size11">11</div>
-                    <div class="box size21">12</div>
-                    <div class="box size12">13</div>
-                    <div class="box size21">14</div>
-                    <div class="box size23">15</div>
-                    <div class="box size22">16</div>
-                    <div class="box size11">17</div>
-                    <div class="box size21">18</div>
-                    <div class="box size12">19</div>
-                    <div class="box size21">20</div>
-                    <div class="box size22">21</div>
-                    <div class="box size23">22</div>
-                    <div class="box size11">23</div>
-                    <div class="box size21">24</div>
-                    <div class="box size12">25</div>
-                    <div class="box size21">26</div>
-                    <div class="box size22">27</div>
-                    <div class="box size22">28</div>
+                    <div class="box size11">1</div>
+                    <div class="box size21">2</div>
+                    <div class="box size32">3</div>
+                    <div class="box size11">4</div>
+                    <div class="box size21">5</div>
+                    <div class="box size12">6</div>
+                    <div class="box size21">7</div>
+                    <div class="box size11">8</div>
+                    <div class="box size31">9</div>
+                    <div class="box size22">10</div>
+
                 </div>
             </div>
         </div>
@@ -146,6 +139,7 @@
 <!-- Тут подключаем скрипты -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="libs/collage/jquery.collagePlus.js"></script>
 <script type="text/javascript" src="libs/nested/jquery.nested.js"></script>
 <script type="text/javascript" src="libs/fancybox/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="libs/waypoints/waypoints-1.6.2.min.js"></script>
@@ -160,12 +154,6 @@
 <script type="text/javascript" src="libs/sidebar/skel.min.js"></script>
 <script type="text/javascript" src="libs/sidebar/util.js"></script>
 <script type="text/javascript" src="js/jquery.validate.js"></script>
-<script type="text/javascript" >
-
-
-
-
-</script>
 <script type="text/javascript" src="js/common.js"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
