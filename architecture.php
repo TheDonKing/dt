@@ -138,18 +138,10 @@
 
 <!-- Тут подключаем скрипты -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-<script type="text/javascript" src="libs/collage/jquery.collagePlus.js"></script>
+
+<script type="text/javascript" src="libs/invertscroll/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="libs/nested/jquery.nested.js"></script>
 <script type="text/javascript" src="libs/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript" src="libs/waypoints/waypoints-1.6.2.min.js"></script>
-<script type="text/javascript" src="libs/scrollto/jquery.scrollTo.min.js"></script>
-<script type="text/javascript" src="libs/invertscroll/jquery.mCustomScrollbar.concat.min.js"></script>
-<script type="text/javascript" src="libs/owl-carousel/owl.carousel.min.js"></script>
-<script type="text/javascript" src="libs/countdown/jquery.plugin.js"></script>
-<script type="text/javascript" src="libs/countdown/jquery.countdown.min.js"></script>
-<script type="text/javascript" src="libs/countdown/jquery.countdown-ru.js"></script>
-<script type="text/javascript" src="libs/landing-nav/navigation.js"></script>
 <script type="text/javascript" src="libs/bootstrap/bootstrap.js"></script>
 <script type="text/javascript" src="libs/sidebar/skel.min.js"></script>
 <script type="text/javascript" src="libs/sidebar/util.js"></script>
