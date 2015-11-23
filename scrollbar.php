@@ -7,45 +7,22 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="libs/invertscroll/jquery.mCustomScrollbar.css" />
-    <style>
-        .content {
-            background: #333 none repeat scroll 0 0;
-            box-sizing: border-box;
-            height: 400px;
-            margin: 10px;
-            max-width: 97%;
-            overflow: auto;
-            padding: 20px;
-            position: relative;
-        }
-        .horizontal-images.content li {
-            float: left;
-            margin: 0 3px;
-        }
-    </style>
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.css" />
 </head>
 <body>
 
-<div id="content-collage" class="content horizontal-images light">
-    <ul>
-        <li><h2>Horizontal <br />auto-expanded <br />scrollbar</h2></li>
-        <li><h2>theme: <br />"dark-thin"</h2></li>
-        <li><img src="images/img6.jpg" /></li>
-        <li><img src="images/img7.jpg" /></li>
-        <li><img src="images/img1.jpg" /></li>
-        <li><img src="images/img2.jpg" /></li>
-        <li><img src="images/img3.jpg" /></li>
-        <li><img src="images/img4.jpg" /></li>
-        <li><img src="images/img5.jpg" /></li>
-        <li><img src="images/img6.jpg" /></li>
-        <li><img src="images/img7.jpg" /></li>
-        <li><img src="images/img1.jpg" /></li>
-        <li><img src="images/img2.jpg" /></li>
-        <li><img src="images/img3.jpg" /></li>
-    </ul>
+<a class="fancybox" data-fancybox-group="group" href="img/portfolio/arhiticture/arafat/1.jpg"><img src="img/portfolio/arhiticture/arafat/500px/1.jpg" alt=""/></a>
+
+<div class="hidden">
+    <div class="portfolio_arafat">
+        <a class="fancybox" data-fancybox-group="group"><img src="img/portfolio/arhiticture/arafat/2.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group"><img src="img/portfolio/arhiticture/arafat/3.jpg" /></a>
+    </div>
 </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="libs/invertscroll/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="libs/fancybox/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>

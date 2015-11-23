@@ -1,19 +1,18 @@
 $(document).ready(function() {
 
-
-
-
-	//Попап менеджер FancyBox
+    //Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto
 	//<a class="fancybox"><img src="image.jpg" /></a>
 	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
-	$(".fancybox").fancybox();
+	$(".fancybox").fancybox({
+        autoScale:true,
+        scrolling:false,
+        centerOnScroll: true
+    });
 
-
-
-
-
-
+    $('.focuspoint').focusPoint({
+        throttleDuration: 100
+    });
 
 
 //Сайд бар во всю высоту
@@ -37,14 +36,27 @@ $(document).ready(function() {
     });
 
     //Горизогтальный скролл во всю высоту
-    $(".content").css("height", $(window).height());
-    $(".container").css("width", $(window).width());
+    $(".collage-container").css("height", $(window).height());
 
 
     //Сетка
     $('#container').nested({
         minWidth: 250
     });
+    makeBoxes = function() {
+        var boxes = [],
+            count = Math.random()*15;
+        if (count < 5) count = 5;
+
+        for (var i=0; i < count; i++ ) {
+            var box = document.createElement('div');
+            box.className = 'box size' +  Math.ceil( Math.random()*3 ) +  Math.ceil( Math.random()*3 );
+            // add box DOM node to array of new elements
+            boxes.push( box );
+        }
+
+        return boxes;
+    };
 
     $('#prepend').click(function(){
         var boxes = makeBoxes();

@@ -76,9 +76,9 @@
             <!-- Recent Posts -->
             <section class="box-link">
                 <ul>
-                    <li class="active"><a class="active" href="#">Архитектура</a></li>
-                    <li><a href="#">Интерьер</a></li>
-                    <li><a href="#">Ландшафт</a></li>
+                    <li class="active"><a class="active" href="#">Дизайн интерьера</a></li>
+                    <li><a href="#">Web-дизайн</a></li>
+                    <li><a href="#">Логотипы и фирменные стили</a></li>
                 </ul>
             </section>
 
@@ -105,33 +105,81 @@
         </div>
         <div class="collage-container">
             <div id="content-collage" class="content horizontal-images light">
-                <div id="container" style="height: 100%">
-                    <div class="box size11">1</div>
-                    <div class="box size21">2</div>
-                    <div class="box size32">3</div>
-                    <div class="box size11">4</div>
-                    <div class="box size21">5</div>
-                    <div class="box size12">6</div>
-                    <div class="box size21">7</div>
-                    <div class="box size11">8</div>
-                    <div class="box size31">9</div>
-                    <div class="box size22">10</div>
-                    <div class="box size11">1</div>
-                    <div class="box size21">2</div>
-                    <div class="box size32">3</div>
-                    <div class="box size11">4</div>
-                    <div class="box size21">5</div>
-                    <div class="box size12">6</div>
-                    <div class="box size21">7</div>
-                    <div class="box size11">8</div>
-                    <div class="box size31">9</div>
-                    <div class="box size22">10</div>
+                <div id="container">
+                    <div class="box size11 focuspoint"><a class="fancybox" data-fancybox-group="group" href="img/portfolio/arhiticture/arafat/1.jpg"><img src="img/portfolio/arhiticture/arafat/1.jpg" alt=""/></a></div>
+                    <div class="box size21 focuspoint" data-focus-x="-0.00" data-focus-y="-0.10"><a class="fancybox" data-fancybox-group="group1" href="img/portfolio/arhiticture/brothers_room/1.jpg"><img src="img/portfolio/arhiticture/brothers_room/1.jpg" alt=""/></a></div>
+                    <div class="box size32 focuspoint"><a class="fancybox" data-fancybox-group="group2" href="img/portfolio/arhiticture/cafe/1.jpg"><img  src="img/portfolio/arhiticture/cafe/1.jpg" alt=""/></a></div>
+                    <div class="box size11 focuspoint"><a class="fancybox" data-fancybox-group="group3" href="img/portfolio/arhiticture/cifra/1.jpg"><img  src="img/portfolio/arhiticture/cifra/1.jpg" alt=""/></a></div>
+                    <div class="box size21 focuspoint" data-focus-x="-0.00" data-focus-y="-0.90"><a class="fancybox" data-fancybox-group="group4" href="img/portfolio/arhiticture/hall_apartment/1.jpg"><img  src="img/portfolio/arhiticture/hall_apartment/1.jpg" alt=""/></a></div>
+                    <div class="box size12 focuspoint"><a class="fancybox" data-fancybox-group="group5" href="img/portfolio/arhiticture/hall_with_kitchen/1.jpg"><img src="img/portfolio/arhiticture/hall_with_kitchen/1.jpg" alt=""/></a></div>
+                    <div class="box size21 focuspoint" data-focus-x="-0.00" data-focus-y="-0.90"><a class="fancybox" data-fancybox-group="group6" href="img/portfolio/arhiticture/hall_with_kitchen_2/1.jpg"><img src="img/portfolio/arhiticture/hall_with_kitchen_2/1.jpg" alt=""/></a></div>
+                    <div class="box size22 focuspoint"><a class="fancybox" data-fancybox-group="group7" href="img/portfolio/arhiticture/interior_cellular/1.jpg"><img src="img/portfolio/arhiticture/interior_cellular/1.jpg" alt=""/></a></div>
+                    <div class="box size31 focuspoint" data-focus-x="-0.00" data-focus-y="-0.20"><a class="fancybox" data-fancybox-group="group8" href="img/portfolio/arhiticture/kids_room/1.jpg"><img src="img/portfolio/arhiticture/kids_room/1.jpg" alt=""/></a></div>
+                    <div class="box size22 focuspoint"><a class="fancybox" data-fancybox-group="group9" href="img/portfolio/arhiticture/kids_room_2/1.jpg"><img src="img/portfolio/arhiticture/kids_room_2/1.jpg" alt=""/></a></div>
+
 
                 </div>
+
             </div>
         </div>
 
     </div>
+</div>
+
+<div class="hidden">
+        <a class="fancybox" data-fancybox-group="group"><img src="img/portfolio/arhiticture/arafat/2.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group"><img src="img/portfolio/arhiticture/arafat/3.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group"><img src="img/portfolio/arhiticture/arafat/4.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group"><img src="img/portfolio/arhiticture/arafat/5.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group"><img src="img/portfolio/arhiticture/arafat/6.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group"><img src="img/portfolio/arhiticture/arafat/7.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group"><img src="img/portfolio/arhiticture/arafat/8.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group"><img src="img/portfolio/arhiticture/arafat/9.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group"><img src="img/portfolio/arhiticture/arafat/10.jpg" /></a>
+    <!-- brothers_room -->
+        <a class="fancybox" data-fancybox-group="group1"><img src="img/portfolio/arhiticture/brothers_room/2.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group1"><img src="img/portfolio/arhiticture/brothers_room/3.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group1"><img src="img/portfolio/arhiticture/brothers_room/4.jpg" /></a>
+    <!-- Cafe -->
+        <a class="fancybox" data-fancybox-group="group2"><img src="img/portfolio/arhiticture/cafe/2.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group2"><img src="img/portfolio/arhiticture/cafe/3.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group2"><img src="img/portfolio/arhiticture/cafe/4.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group2"><img src="img/portfolio/arhiticture/cafe/5.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group2"><img src="img/portfolio/arhiticture/cafe/6.jpg" /></a>
+    <!-- Cifra -->
+        <a class="fancybox" data-fancybox-group="group3"><img src="img/portfolio/arhiticture/cifra/2.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group3"><img src="img/portfolio/arhiticture/cifra/3.jpg" /></a>
+    <!-- Hall apartment -->
+        <a class="fancybox" data-fancybox-group="group4"><img src="img/portfolio/arhiticture/hall_apartment/2.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group4"><img src="img/portfolio/arhiticture/hall_apartment/3.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group4"><img src="img/portfolio/arhiticture/hall_apartment/4.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group4"><img src="img/portfolio/arhiticture/hall_apartment/5.jpg" /></a>
+    <!-- Hall with kitchen -->
+        <a class="fancybox" data-fancybox-group="group5"><img src="img/portfolio/arhiticture/hall_with_kitchen/2.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group5"><img src="img/portfolio/arhiticture/hall_with_kitchen/3.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group5"><img src="img/portfolio/arhiticture/hall_with_kitchen/4.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group5"><img src="img/portfolio/arhiticture/hall_with_kitchen/5.jpg" /></a>
+    <!-- Hall with kitchen 2 -->
+        <a class="fancybox" data-fancybox-group="group6"><img src="img/portfolio/arhiticture/hall_with_kitchen_2/2.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group6"><img src="img/portfolio/arhiticture/hall_with_kitchen_2/3.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group6"><img src="img/portfolio/arhiticture/hall_with_kitchen_2/4.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group6"><img src="img/portfolio/arhiticture/hall_with_kitchen_2/5.jpg" /></a>
+    <!-- Interior cellular -->
+        <a class="fancybox" data-fancybox-group="group7"><img src="img/portfolio/arhiticture/interior_cellular/2.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group7"><img src="img/portfolio/arhiticture/interior_cellular/3.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group7"><img src="img/portfolio/arhiticture/interior_cellular/4.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group7"><img src="img/portfolio/arhiticture/interior_cellular/5.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group7"><img src="img/portfolio/arhiticture/interior_cellular/6.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group7"><img src="img/portfolio/arhiticture/interior_cellular/7.jpg" /></a>
+    <!-- Kids_room -->
+        <a class="fancybox" data-fancybox-group="group8"><img src="img/portfolio/arhiticture/kids_room/2.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group8"><img src="img/portfolio/arhiticture/kids_room/3.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group8"><img src="img/portfolio/arhiticture/kids_room/4.jpg" /></a>
+    <!-- Kids_room 2 -->
+        <a class="fancybox" data-fancybox-group="group9"><img src="img/portfolio/arhiticture/kids_room/2.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group9"><img src="img/portfolio/arhiticture/kids_room/3.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group9"><img src="img/portfolio/arhiticture/kids_room/4.jpg" /></a>
+
 </div>
 
 
@@ -141,6 +189,8 @@
 
 <script type="text/javascript" src="libs/invertscroll/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="libs/nested/jquery.nested.js"></script>
+<script type="text/javascript" src="libs/nested/makeboxes.js"></script>
+<script type="text/javascript" src="libs/focuspoint/jquery.focuspoint.min.js"></script>
 <script type="text/javascript" src="libs/fancybox/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="libs/bootstrap/bootstrap.js"></script>
 <script type="text/javascript" src="libs/sidebar/skel.min.js"></script>
