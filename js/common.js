@@ -10,9 +10,7 @@ $(document).ready(function() {
         centerOnScroll: true
     });
 
-    $('.focuspoint').focusPoint({
-        throttleDuration: 100
-    });
+    $(".focuspoint").focusPoint();
 
 
 //Сайд бар во всю высоту
@@ -35,14 +33,18 @@ $(document).ready(function() {
 
     });
 
+
     //Горизогтальный скролл во всю высоту
     $(".collage-container").css("height", $(window).height());
+
 
 
     //Сетка
     $('#container').nested({
         minWidth: 250
     });
+
+
     makeBoxes = function() {
         var boxes = [],
             count = Math.random()*15;

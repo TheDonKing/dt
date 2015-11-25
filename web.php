@@ -73,8 +73,8 @@
             <!-- Recent Posts -->
             <section class="box-link">
                 <ul>
-                    <li class="active"><a class="active" href="architecture.php">Дизайн интерьера</a></li>
-                    <li><a href="web.php">Web-дизайн</a></li>
+                    <li><a  href="architecture.php">Дизайн интерьера</a></li>
+                    <li class="active"><a class="active" href="web.php">Web-дизайн</a></li>
                     <li><a href="logo.php">Логотипы и фирменные стили</a></li>
                 </ul>
             </section>
@@ -97,7 +97,7 @@
                 </div>
             </section>
          <!-- collage-container -->
-        </div>
+        </div>logo
         <div class="collage-container">
             <div id="content-collage" class="content horizontal-images light">
                 <div id="container">
@@ -114,6 +114,8 @@
                     <div class="box size11 focuspoint"><a class="fancybox" data-fancybox-group="group10" href="img/portfolio/arhiticture/kitchen_apartment/1.jpg"><img src="img/portfolio/arhiticture/kitchen_apartment/1.jpg" alt=""/></a></div>
                     <div class="box size21 focuspoint"><a class="fancybox" data-fancybox-group="group11" href="img/portfolio/arhiticture/kitchen_modern/1.jpg"><img src="img/portfolio/arhiticture/kitchen_modern/1.jpg" alt=""/></a></div>
                     <div class="box size12 focuspoint" data-focus-x="-0.50" data-focus-y="-0.90"><a class="fancybox" data-fancybox-group="group12" href="img/portfolio/arhiticture/room_parent/1.jpg"><img src="img/portfolio/arhiticture/room_parent/1.jpg" alt=""/></a></div>
+
+
                 </div>
 
             </div>
@@ -172,29 +174,19 @@
         <a class="fancybox" data-fancybox-group="group8"><img src="img/portfolio/arhiticture/kids_room/3.jpg" /></a>
         <a class="fancybox" data-fancybox-group="group8"><img src="img/portfolio/arhiticture/kids_room/4.jpg" /></a>
     <!-- Kids_room 2 -->
-        <a class="fancybox" data-fancybox-group="group9"><img src="img/portfolio/arhiticture/kids_room_2/2.jpg" /></a>
-        <a class="fancybox" data-fancybox-group="group9"><img src="img/portfolio/arhiticture/kids_room_2/3.jpg" /></a>
-        <a class="fancybox" data-fancybox-group="group9"><img src="img/portfolio/arhiticture/kids_room_2/4.jpg" /></a>
-    <!-- Kitchen apartment -->
-        <a class="fancybox" data-fancybox-group="group10"><img src="img/portfolio/arhiticture/kitchen_apartment/2.jpg" /></a>
-        <a class="fancybox" data-fancybox-group="group10"><img src="img/portfolio/arhiticture/kitchen_apartment/3.jpg" /></a>
-        <a class="fancybox" data-fancybox-group="group10"><img src="img/portfolio/arhiticture/kitchen_apartment/4.jpg" /></a>
-    <!-- Kitchen modern -->
-        <a class="fancybox" data-fancybox-group="group11"><img src="img/portfolio/arhiticture/kitchen_modern/2.jpg" /></a>
-        <a class="fancybox" data-fancybox-group="group11"><img src="img/portfolio/arhiticture/kitchen_modern/3.jpg" /></a>
-    <!-- Room parent -->
-        <a class="fancybox" data-fancybox-group="group12"><img src="img/portfolio/arhiticture/room_parent/2.jpg" /></a>
-        <a class="fancybox" data-fancybox-group="group12"><img src="img/portfolio/arhiticture/room_parent/3.jpg" /></a>
-        <a class="fancybox" data-fancybox-group="group12"><img src="img/portfolio/arhiticture/room_parent/4.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group9"><img src="img/portfolio/arhiticture/kids_room/2.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group9"><img src="img/portfolio/arhiticture/kids_room/3.jpg" /></a>
+        <a class="fancybox" data-fancybox-group="group9"><img src="img/portfolio/arhiticture/kids_room/4.jpg" /></a>
 
 </div>
 
 
+
 <!-- Тут подключаем скрипты -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="libs/nested/jquery.nested.js"></script>
-<script type="text/javascript" src="libs/invertscroll/jquery.mCustomScrollbar.concat.min.js"></script>
 
+<script type="text/javascript" src="libs/invertscroll/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="libs/nested/jquery.nested.js"></script>
 <script type="text/javascript" src="libs/nested/makeboxes.js"></script>
 <script type="text/javascript" src="libs/focuspoint/jquery.focuspoint.min.js"></script>
 <script type="text/javascript" src="libs/fancybox/jquery.fancybox.pack.js"></script>

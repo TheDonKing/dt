@@ -622,6 +622,7 @@ input[placeholder] {
 .collage-container .box {
   overflow: hidden;
   margin: 25px;
+  background-color: #fff;
   -webkit-transition: all 300ms cubic-bezier(1, 0, 0, 1);
   -moz-transition: all 300ms cubic-bezier(1, 0, 0, 1);
   -ms-transition: all 300ms cubic-bezier(1, 0, 0, 1);
@@ -634,7 +635,7 @@ input[placeholder] {
   -o-transition-property: left, right, top;
   transition-property: left, right, top;
 }
-.collage-container .box img {
+.collage-container .box a img {
   text-align: center;
   height: auto;
   margin: 0 auto;
